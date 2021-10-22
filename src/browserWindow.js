@@ -66,7 +66,7 @@ class PatchedBrowserWindow extends BrowserWindow {
 
   static loadUrl (ogLoadUrl, url, opts) {
     console.log(url);
-    if (url.match(/^https:\/\/canary\.discord(app)?\.com\/_powercord\//)) {
+    if (url.match(/^https:\/\/discord(app)?\.com\/_powercord\//)) {
       this.webContents._powercordOgUrl = url;
       return ogLoadUrl('https://canary.discord.com/app', opts);
     }
