@@ -4,4 +4,4 @@
  * https://powercord.dev/porkord-license
  */
 
-exports.getAppDir = async () => '/Applications/Discord Canary.app/Contents/Resources/app';
+exports.getAppDir = async () => '/Applications/Discord.app/Contents/Resources/app';
