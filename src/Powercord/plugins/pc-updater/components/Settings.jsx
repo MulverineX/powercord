@@ -21,7 +21,7 @@ module.exports = class UpdaterSettings extends React.PureComponent {
   }
 
   render () {
-    const isUnsupported = window.GLOBAL_ENV.RELEASE_CHANNEL !== 'canary';
+    const isUnsupported = false;
     const moment = getModule([ 'momentProperties' ], false);
     // @todo: Make this be in its own store
     const awaitingReload = this.props.getSetting('awaiting_reload', false);
