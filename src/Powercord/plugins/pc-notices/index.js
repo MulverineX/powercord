@@ -21,10 +21,6 @@ module.exports = class Notices extends Plugin {
       this._welcomeNewUser();
       unlink(injectedFile);
     }
-
-    if (window.GLOBAL_ENV.RELEASE_CHANNEL !== 'canary') {
-      this._unsupportedBuild();
-    }
   }
 
   pluginWillUnload () {
